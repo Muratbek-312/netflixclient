@@ -22,6 +22,7 @@ export default function List({ list }) {
     }
     if (direction === "right" && slideNumber < 10 - clickLimit) {
       setSlideNumber(slideNumber + 1);
+      setClickLimit()
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
     }
   };
